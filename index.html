@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rushikesh Jadhav - portfolio">
+    <meta name="description" content="Rushikesh Jadhav - Portfolio">
     <title>Rushikesh Jadhav | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,8 +11,9 @@
 <header class="navbar">
     <div class="container nav-inner">
         <a href="#home" class="logo">RJ<span>.</span></a>
-        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
-        <nav id="navMenu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">☰</label>
+        <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -23,145 +24,195 @@
 </header>
 
 <main>
-    <section id="home" class="hero section">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <p class="eyebrow">HELLO, I'M</p>
-                <h1>Rushikesh <span>Jadhav</span></h1>
-                <h2>Electronics & Computer Engineering Student</h2>
-                <p class="hero-text">
-                    I enjoy building responsive websites, learning Java and DSA,
-                    and turning ideas into practical technology projects.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
-                </div>
-            </div>
-
-            <div class="hero-card">
-                <div class="avatar">
-                    <img src="assets/yellow bg my photo.png" style="height: 4em; border-radius: 40%; position: absolute;" alt="avatar">
-                </div>
-                <br>
-                <p>Web Development • Java • DSA • DBMS</p>
+<section id="home" class="hero section">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <p class="eyebrow">HELLO, I'M</p>
+            <h1>Rushikesh <span>Jadhav</span></h1>
+            <h2>Electronics & Computer Engineering Student</h2>
+            <p class="hero-text">
+                I enjoy building responsive websites, learning Java and DSA,
+                and turning ideas into practical technology projects.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">ABOUT ME</p>
-                <h2>Building skills one project at a time.</h2>
+        <div class="hero-card">
+            <div class="avatar">
+                <img src="assets/yellow bg my photo.png" alt="Rushikesh Jadhav">
             </div>
-            <div class="about-grid">
-                <div>
-                    <p>
-                        I am a B.E. Electronics and Computer Engineering student
-                        interested in web development, Java, data structures,
-                        databases, and practical technology projects.
-                    </p>
-                    <p>
-                        I believe in learning by building. My goal is to improve
-                        my problem-solving skills and create projects that are
-                        simple, useful, and user friendly.
-                    </p>
-                </div>
-
-                <div class="info-card">
-                    <div><strong>Education</strong><span>B.E. Electronics & Computer Engineering</span></div>
-                    <div><strong>Focus</strong><span>Web Development & Java DSA</span></div>
-                    <div><strong>Approach</strong><span>Learn • Build • Debug • Improve</span></div>
-                </div>
-            </div>
+            <p>Web Development • Java • DSA • DBMS</p>
         </div>
-    </section>
-    <section id="skills" class="section alt">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">MY SKILLS</p>
-                <h2>Technologies I work with.</h2>
-            </div>
+    </div>
+</section>
 
-            <div class="skills-grid">
-                <div class="skill-card"><span>01</span><h3>HTML</h3><p>Semantic and structured web pages.</p></div>
-                <div class="skill-card"><span>02</span><h3>CSS</h3><p>Responsive layouts, Flexbox and modern styling.</p></div>
-                <div class="skill-card"><span>03</span><h3>JavaScript</h3><p>DOM manipulation and interactive UI.</p></div>
-                <div class="skill-card"><span>04</span><h3>Java</h3><p>OOP, problem solving and DSA practice.</p></div>
-                <div class="skill-card"><span>05</span><h3>SQL & DBMS</h3><p>Queries, database concepts and CRUD operations.</p></div>
-                <div class="skill-card"><span>06</span><h3>Git & GitHub</h3><p>Version control and project collaboration.</p></div>
-            </div>
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Building skills one project at a time.</h2>
         </div>
-    </section>
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">MY WORK</p>
-                <h2>Projects I've built.</h2>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-number">01</div>
-                    <h3>Learnova</h3>
-                    <p>
-                        A responsive course-selling website concept with
-                        navigation, hero content, course cards and user-focused
-                        layouts for desktop and mobile.
-                    </p>
-                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                </article>
-                <article class="project-card">
-                    <div class="project-number">02</div>
-                    <h3>Role the Dice</h3>
-                    <p>
-                        An interactive dice game project created to practice
-                        JavaScript logic, DOM manipulation, events and dynamic UI updates.
-                    </p>
-                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                </article>
-                <article class="project-card">
-                    <div class="project-number">03</div>
-                    <h3>Smart Plant Watering</h3>
-                    <p>
-                        An IoT project concept using sensors and a microcontroller
-                        to automate plant watering based on soil conditions.
-                    </p>
-                    <div class="tags"><span>Arduino</span><span>IoT</span><span>Sensors</span></div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-        <div class="container contact-grid">
+        <div class="about-grid">
             <div>
-                <p class="eyebrow">GET IN TOUCH</p>
-                <h2>Let's connect and build something useful.</h2>
                 <p>
-                    Have a project idea, internship opportunity, or simply want
-                    to connect? Feel free to reach out.
+                    I am a B.E. Electronics and Computer Engineering student
+                    interested in web development, Java, data structures,
+                    databases, and practical technology projects.
+                </p>
+                <p>
+                    I believe in learning by building. My goal is to improve
+                    my problem-solving skills and create projects that are
+                    simple, useful, and user friendly.
                 </p>
             </div>
-
-            <div class="contact-card">
-                <a href="mailto:rushikeshjadhav4455@gmail.com">
-                    <span>Email</span>
-                    rushikeshjadhav4455@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/rushikesh-jadhav06" target="_blank" rel="noopener">
-                    <span>LinkedIn</span>
-                    https://www.linkedin.com/in/rushikesh-jadhav06
-                </a>
-                <a href="tel" target="_blank" rel="noopener">
-                    <span>Mobile</span>
-                    +91-801008043
-                </a>
+            <div class="info-card">
+                <div>
+                    <strong>Education</strong>
+                    <span>B.E. Electronics & Computer Engineering</span>
+                </div>
+                <div>
+                    <strong>Focus</strong>
+                    <span>Web Development & Java DSA</span>
+                </div>
+                <div>
+                    <strong>Approach</strong>
+                    <span>Learn • Build • Debug • Improve</span>
+                </div>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
+<section id="skills" class="section alt">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">MY SKILLS</p>
+            <h2>Technologies I work with.</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span>01</span>
+                <h3>HTML</h3>
+                <p>Semantic and structured web pages.</p>
+            </div>
+            <div class="skill-card">
+                <span>02</span>
+                <h3>CSS</h3>
+                <p>Responsive layouts, Flexbox and modern styling.</p>
+            </div>
+            <div class="skill-card">
+                <span>03</span>
+                <h3>JavaScript</h3>
+                <p>DOM manipulation and interactive UI.</p>
+            </div>
+            <div class="skill-card">
+                <span>04</span>
+                <h3>Java</h3>
+                <p>OOP, problem solving and DSA practice.</p>
+            </div>
+            <div class="skill-card">
+                <span>05</span>
+                <h3>SQL & DBMS</h3>
+                <p>Queries, database concepts and CRUD operations.</p>
+            </div>
+            <div class="skill-card">
+                <span>06</span>
+                <h3>Git & GitHub</h3>
+                <p>Version control and project collaboration.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">MY WORK</p>
+            <h2>Projects I've built.</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-number">01</div>
+                <h3>Learnova</h3>
+                <p>
+                    A responsive course-selling website concept with
+                    navigation, hero content, course cards and user-focused
+                    layouts for desktop and mobile.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-number">02</div>
+                <h3>Role the Dice</h3>
+                <p>
+                    An interactive dice game project created to practice
+                    JavaScript logic, DOM manipulation, events and dynamic UI updates.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-number">03</div>
+                <h3>Smart Plant Watering</h3>
+                <p>
+                    An IoT project concept using sensors and a microcontroller
+                    to automate plant watering based on soil conditions.
+                </p>
+
+                <div class="tags">
+                    <span>Arduino</span>
+                    <span>IoT</span>
+                    <span>Sensors</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+        <div>
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let's connect and build something useful.</h2>
+            <p>
+                Have a project idea, internship opportunity, or simply want
+                to connect? Feel free to reach out.
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <a href="mailto:rushikeshjadhav4455@gmail.com">
+                <span>Email</span>
+                rushikeshjadhav4455@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/rushikesh-jadhav06" target="_blank">
+                <span>LinkedIn</span>
+                LinkedIn Profile
+            </a>
+            <a href="tel:+91801008043">
+                <span>Mobile</span>
+                +91-801008043
+            </a>
+        </div>
+    </div>
+</section>
+</main>
 <footer>
     <div class="container footer-inner">
         <p>© 2026 Rushikesh Jadhav</p>
